@@ -1,4 +1,5 @@
 package Lecture4_interfaces_abstract_classes;
+
 import java.util.Calendar;
 
 /**
@@ -16,6 +17,9 @@ public interface TransactionInterface {
     // Method to get a unique identifier for the transaction
     String getTransactionID();
 
+    // ADDED FOR QUESTION 1: Method to print a transaction receipt or details
+    void printTransactionDetails();
+
+    // ADDED FOR QUESTION 1 & 3: Method to apply transaction logic to an account balance
+    void apply(BankAccount ba) throws InsufficientFundsException;
 }
-
-
